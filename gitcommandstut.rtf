@@ -1,0 +1,145 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red159\green160\blue28;\red180\green36\blue25;
+\red47\green180\blue29;\red46\green174\blue187;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c68468\c68012\c14208;\cssrgb\c76409\c21698\c12524;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c20196\c73240\c78250;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Fri Mar 26 11:06:12 on ttys000\
+mayank@Mayanks-Air ~ % cd Desktop \
+mayank@Mayanks-Air Desktop % cd gittut \
+mayank@Mayanks-Air gittut % git config --global user.name "Mayank"\
+mayank@Mayanks-Air gittut % git config --global user.email "mayanknager2001@gmail.com"\
+mayank@Mayanks-Air gittut % git config --list                     \
+credential.helper=osxkeychain\
+user.name=Mayank\
+user.email=mayanknager2001@gmail.com\
+mayank@Mayanks-Air gittut % git config user.name\
+Mayank\
+mayank@Mayanks-Air gittut % git config user.email\
+mayanknager2001@gmail.com\
+mayank@Mayanks-Air gittut % ls\
+first.rtf\
+mayank@Mayanks-Air gittut % git status\
+fatal: not a git repository (or any of the parent directories): .git\
+mayank@Mayanks-Air gittut % git init\
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .DS_Store\cf2 \
+	\cf4 first.rtf\cf2 \
+	\cf4 quick.docx\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+mayank@Mayanks-Air gittut % git add -a\
+error: unknown switch `a'\
+usage: git add [<options>] [--] <pathspec>...\
+\
+    -n, --dry-run         dry run\
+    -v, --verbose         be verbose\
+\
+    -i, --interactive     interactive picking\
+    -p, --patch           select hunks interactively\
+    -e, --edit            edit current diff and apply\
+    -f, --force           allow adding otherwise ignored files\
+    -u, --update          update tracked files\
+    --renormalize         renormalize EOL of tracked files (implies -u)\
+    -N, --intent-to-add   record only the fact that the path will be added later\
+    -A, --all             add changes from all tracked and untracked files\
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)\
+    --refresh             don't add, only refresh the index\
+    --ignore-errors       just skip files which cannot be added because of errors\
+    --ignore-missing      check if - even missing - files are ignored in dry run\
+    --chmod (+|-)x        override the executable bit of the listed files\
+    --pathspec-from-file <file>\
+                          read pathspec from file\
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character\
+\
+mayank@Mayanks-Air gittut % git add --a\
+mayank@Mayanks-Air gittut % git status \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "Initial Commit"\
+[master (root-commit) e51ddaa] Initial Commit\
+ 3 files changed, 8 insertions(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 first.rtf\
+ create mode 100644 quick.docx\
+mayank@Mayanks-Air gittut % git status                    \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git log   \
+\cf3 commit e51ddaa5e60572e3c4edfca3260fd9dd66f844e2 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 11:41:55 2021 +0530\
+\
+    Initial Commit\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   first.rtf\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   first.rtf\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   first.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 nnnnquick.pages\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git add first.txt\
+fatal: pathspec 'first.txt' did not match any files\
+mayank@Mayanks-Air gittut % git add first.rtd\
+fatal: pathspec 'first.rtd' did not match any files\
+mayank@Mayanks-Air gittut % git status       \
+On branch master\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   first.rtf\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git add first.rtf\
+mayank@Mayanks-Air gittut % }
