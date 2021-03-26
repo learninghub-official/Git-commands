@@ -585,4 +585,747 @@ mayank@Mayanks-Air gittut % git status                                \
 On branch master\
 nothing to commit, working tree clean\
 mayank@Mayanks-Air gittut % \
+\
+More commands\
+\
+mayank@Mayanks-Air gittut % git log\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    commands added in gitcommandstut.rtf\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:57:26 2021 +0530\
+\
+    Removed and ignored files\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:48:24 2021 +0530\
+\
+    removed by git commands\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:44:36 2021 +0530\
+\
+    removed second.txt or rtf\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:41:37 2021 +0530\
+\
+    renamed\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+mayank@Mayanks-Air gittut % git log -p\
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    commands added in gitcommandstut.rtf\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/gitcommandstut.rtf b/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b index d4774e7..dd7488e 100644
+\f0\b0 \
+
+\f1\b --- a/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b +++ b/gitcommandstut.rtf
+\f0\b0 \
+\cf6 @@ -142,4 +142,447 @@\cf2  Changes not staged for commit:\\\
+ \\\
+ no changes added to commit (use "git add" and/or "git commit -a")\\\
+ mayank@Mayanks-Air gittut % git add first.rtf\\\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -mayank@Mayanks-Air gittut % \}\cf2 \
+\\ No newline at end of file\
+\cf5 +mayank@Mayanks-Air gittut % \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Second stage learning\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % cd .gitignore \\\cf2 \
+\cf5 +cd: not a directory: .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % cd .gitignore \\\cf2 \
+\cf5 +cd: not a directory: .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % ls\\\cf2 \
+\cf5 +error.log              first.rtf               gitcommandstut.rtf      quick.docx\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes not staged for commit:\\\cf2 \
+\cf5 +  (use "git add <file>..." to update what will be committed)\\\cf2 \
+\cf5 +  (use "git restore <file>..." to discard changes in working directory)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 modified:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % rm -rf .git                                           \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +fatal: not a git repository (or any of the parent directories): .git\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +fatal: not a git repository (or any of the parent directories): .git\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git init        \\\cf2 \
+\cf5 +\\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: is subject to change. To configure the initial branch name to use in all\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: of your new repositories, which will suppress this warning, call:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git config --global init.defaultBranch <name>\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: 'development'. The just-created branch can be renamed via this command:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git branch -m <name>\\cf2 \\\cf2 \
+\cf5 +Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch error.log \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status     \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +nothing added to commit but untracked files present (use "git add" to track)\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % rm -rf .git    \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git init       \\\cf2 \
+\cf5 +\\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: is subject to change. To configure the initial branch name to use in all\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: of your new repositories, which will suppress this warning, call:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git config --global init.defaultBranch <name>\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: 'development'. The just-created branch can be renamed via this command:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git branch -m <name>\\cf2 \\\cf2 \
+\cf5 +Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +nothing added to commit but untracked files present (use "git add" to track)\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git add --a\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   error.log\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   error.log\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+mayank@Mayanks-Air gittut % git log --stat\
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    commands added in gitcommandstut.rtf\
+\
+ gitcommandstut.rtf | 445 \cf5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\cf4 -\cf2 \
+ 1 file changed, 444 insertions(+), 1 deletion(-)\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:57:26 2021 +0530\
+\
+    Removed and ignored files\
+\
+ .gitignore.rtf             | 8 \cf4 --------\cf2 \
+ .gitignore => .gitreignore | 0\
+ 2 files changed, 8 deletions(-)\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:48:24 2021 +0530\
+\
+    removed by git commands\
+\
+ first1.rtf => first_rename.rtf | 0\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:44:36 2021 +0530\
+\
+    removed second.txt or rtf\
+\
+ second.rtf | 11 \cf4 -----------\cf2 \
+ 1 file changed, 11 deletions(-)\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+\
+ first1.rtf => first_rename.rtf | 0\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:44:36 2021 +0530\
+\
+    removed second.txt or rtf\
+\
+ second.rtf | 11 \cf4 -----------\cf2 \
+ 1 file changed, 11 deletions(-)\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:41:37 2021 +0530\
+\
+    renamed\
+\
+ first.rtf => first1.rtf | 0\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:40:18 2021 +0530\
+\
+    added all files\
+\
+ .DS_Store  | Bin \cf4 6148\cf2  -> \cf5 6148\cf2  bytes\
+ second.rtf |  11 \cf5 +++++++++++\cf2 \
+ 2 files changed, 11 insertions(+)\
+\
+\cf3 commit a2d09411f5001e9417a7c0bf179352d443ed13b9\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 14:37:49 2021 +0530\
+\
+    Direct commit\
+\
+ .DS_Store          | Bin \cf4 0\cf2  -> \cf5 6148\cf2  bytes\
+ .gitignore         |   0\
+ .gitignore.rtf     |   8 \cf5 ++++\cf2 \
+ error.log          |   0\
+ first.rtf          |  11 \cf5 ++++++\cf2 \
+ gitcommandstut.rtf | 145 \cf5 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\cf2 \
+ quick.docx         | Bin \cf4 0\cf2  -> \cf5 559978\cf2  bytes\
+ 7 files changed, 164 insertions(+)\
+mayank@Mayanks-Air gittut % git log --pretty=oneline\
+\cf3 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  commands added in gitcommandstut.rtf\
+\cf3 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2  Removed and ignored files\
+\cf3 ad015aa88bae4fc2829be70b914e9a052505c840\cf2  removed by git commands\
+\cf3 e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2  removed second.txt or rtf\
+\cf3 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2  renamed\
+\cf3 bc41937f3380c327235fadda78cd3babac04868b\cf2  added all files\
+\cf3 a2d09411f5001e9417a7c0bf179352d443ed13b9\cf2  Direct commit\
+mayank@Mayanks-Air gittut % git log --pretty=short  \
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    commands added in gitcommandstut.rtf\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    Removed and ignored files\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    removed by git commands\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    removed second.txt or rtf\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    renamed\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    added all files\
+\
+\cf3 commit a2d09411f5001e9417a7c0bf179352d443ed13b9\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    Direct commit\
+mayank@Mayanks-Air gittut % git log --pretty=full \
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Commit: Mayank <mayanknager2001@gmail.com>\
+\
+    commands added in gitcommandstut.rtf\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Commit: Mayank <mayanknager2001@gmail.com>\
+\
+    Removed and ignored files\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Commit: Mayank <mayanknager2001@gmail.com>\
+\
+    removed by git commands\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Commit: Mayank <mayanknager2001@gmail.com>\
+\
+    removed second.txt or rtf\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Commit: Mayank <mayanknager2001@gmail.com>\
+\
+    renamed\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+mayank@Mayanks-Air gittut % git log --since=2.days\
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    commands added in gitcommandstut.rtf\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:57:26 2021 +0530\
+\
+    Removed and ignored files\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:48:24 2021 +0530\
+\
+    removed by git commands\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:44:36 2021 +0530\
+\
+    removed second.txt or rtf\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 20:41:37 2021 +0530\
+\
+    renamed\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+mayank@Mayanks-Air gittut % git log --pretty=format :"%h -- an %\
+dquote>                       \
+mayank@Mayanks-Air gittut % git log --pretty=format :"%h --  %an"\
+fatal: invalid --pretty format: format\
+mayank@Mayanks-Air gittut % git log --pretty=format: "%h --  %an"\
+fatal: ambiguous argument '%h --  %an': unknown revision or path not in the working tree.\
+Use '--' to separate paths from revisions, like this:\
+'git <command> [<revision>...] -- [<file>...]'\
+mayank@Mayanks-Air gittut % git log --pretty=format:"%h --  %an" \
+8f856b7 --  Mayank\
+4ef4b99 --  Mayank\
+ad015aa --  Mayank\
+e305e90 --  Mayank\
+2bc027e --  Mayank\
+bc41937 --  Mayank\
+a2d0941 --  Mayank\
+mayank@Mayanks-Air gittut % git log --pretty=format:"%h --  %ae"\
+8f856b7 --  mayanknager2001@gmail.com\
+4ef4b99 --  mayanknager2001@gmail.com\
+ad015aa --  mayanknager2001@gmail.com\
+e305e90 --  mayanknager2001@gmail.com\
+2bc027e --  mayanknager2001@gmail.com\
+bc41937 --  mayanknager2001@gmail.com\
+a2d0941 --  mayanknager2001@gmail.com\
+mayank@Mayanks-Air gittut % git log --pretty=format:"%h --  %t" \
+8f856b7 --  302187c\
+4ef4b99 --  73954f8\
+ad015aa --  8e14010\
+e305e90 --  2c24c3b\
+2bc027e --  d9f8567\
+bc41937 --  4399fbb\
+a2d0941 --  40d9869\
+mayank@Mayanks-Air gittut % git commit -m "filters of  git log"                  \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git log -p -1\
+\cf3 commit 8f856b7f86cd731b76fe35584f1b3084c5441327 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    commands added in gitcommandstut.rtf\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/gitcommandstut.rtf b/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b index d4774e7..dd7488e 100644
+\f0\b0 \
+
+\f1\b --- a/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b +++ b/gitcommandstut.rtf
+\f0\b0 \
+\cf6 @@ -142,4 +142,447 @@\cf2  Changes not staged for commit:\\\
+ \\\
+ no changes added to commit (use "git add" and/or "git commit -a")\\\
+ mayank@Mayanks-Air gittut % git add first.rtf\\\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -mayank@Mayanks-Air gittut % \}\cf2 \
+\\ No newline at end of file\
+\cf5 +mayank@Mayanks-Air gittut % \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Second stage learning\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+mayank@Mayanks-Air gittut % git commit --amend\
+[master 471fe83] added new comment to this / -> commands added in gitcommandstut.rtf\
+ Date: Fri Mar 26 21:08:13 2021 +0530\
+ 1 file changed, 444 insertions(+), 1 deletion(-)\
+mayank@Mayanks-Air gittut % git log -p -1     \
+\cf3 commit 471fe83993bce671552ad69ae61539b9f3933421 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    added new comment to this / -> commands added in gitcommandstut.rtf\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/gitcommandstut.rtf b/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b index d4774e7..dd7488e 100644
+\f0\b0 \
+
+\f1\b --- a/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b +++ b/gitcommandstut.rtf
+\f0\b0 \
+\cf6 @@ -142,4 +142,447 @@\cf2  Changes not staged for commit:\\\
+ \\\
+ no changes added to commit (use "git add" and/or "git commit -a")\\\
+ mayank@Mayanks-Air gittut % git add first.rtf\\\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -mayank@Mayanks-Air gittut % \}\cf2 \
+\\ No newline at end of file\
+\cf5 +mayank@Mayanks-Air gittut % \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Second stage learning\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % cd .gitignore \\\cf2 \
+\cf5 +cd: not a directory: .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % cd .gitignore \\\cf2 \
+\cf5 +cd: not a directory: .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % ls\\\cf2 \
+\cf5 +error.log              first.rtf               gitcommandstut.rtf      quick.docx\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes not staged for commit:\\\cf2 \
+\cf5 +  (use "git add <file>..." to update what will be committed)\\\cf2 \
+\cf5 +  (use "git restore <file>..." to discard changes in working directory)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 modified:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % rm -rf .git                                           \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +fatal: not a git repository (or any of the parent directories): .git\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +fatal: not a git repository (or any of the parent directories): .git\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git init        \\\cf2 \
+\cf5 +\\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: is subject to change. To configure the initial branch name to use in all\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: of your new repositories, which will suppress this warning, call:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git config --global init.defaultBranch <name>\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: 'development'. The just-created branch can be renamed via this command:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git branch -m <name>\\cf2 \\\cf2 \
+\cf5 +Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch error.log \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status     \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+\cf5 +  (use "git add <file>..." to include in what will be committed)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 .gitignore.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 error.log\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 gitcommandstut.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf4 quick.docx\\cf2 \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +nothing added to commit but untracked files present (use "git add" to track)\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % rm -rf .git    \\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git init       \\\cf2 \
+\cf5 +\\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: is subject to change. To configure the initial branch name to use in all\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: of your new repositories, which will suppress this warning, call:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git config --global init.defaultBranch <name>\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: 'development'. The just-created branch can be renamed via this command:\\cf2 \\\cf2 \
+\cf5 +\\cf3 hint: \\cf2 \\\cf2 \
+\cf5 +\\cf3 hint:     git branch -m <name>\\cf2 \\\cf2 \
+\cf5 +Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Untracked files:\\\cf2 \
+mayank@Mayanks-Air gittut % git log --pretty=format:"%h --  %an"\
+471fe83 --  Mayank\
+4ef4b99 --  Mayank\
+ad015aa --  Mayank\
+e305e90 --  Mayank\
+2bc027e --  Mayank\
+bc41937 --  Mayank\
+a2d0941 --  Mayank\
+mayank@Mayanks-Air gittut % git log --pretty=short               \
+\cf3 commit 471fe83993bce671552ad69ae61539b9f3933421 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    added new comment to this / -> commands added in gitcommandstut.rtf\
+\
+\cf3 commit 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    Removed and ignored files\
+\
+\cf3 commit ad015aa88bae4fc2829be70b914e9a052505c840\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    removed by git commands\
+\
+\cf3 commit e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    removed second.txt or rtf\
+\
+\cf3 commit 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    renamed\
+\
+\cf3 commit bc41937f3380c327235fadda78cd3babac04868b\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+\
+    added all files\
+\
+\cf3 commit a2d09411f5001e9417a7c0bf179352d443ed13b9\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+mayank@Mayanks-Air gittut % git log --pretty=oneline             \
+\cf3 471fe83993bce671552ad69ae61539b9f3933421 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2  added new comment to this / -> commands added in gitcommandstut.rtf\
+\cf3 4ef4b990a68f8d46173e4b79442196ad4ab22c58\cf2  Removed and ignored files\
+\cf3 ad015aa88bae4fc2829be70b914e9a052505c840\cf2  removed by git commands\
+\cf3 e305e90a8ee2e55dce5d31e36821518e25c27f8e\cf2  removed second.txt or rtf\
+\cf3 2bc027e422dd029dbaaedf09ad309a1239745cc7\cf2  renamed\
+\cf3 bc41937f3380c327235fadda78cd3babac04868b\cf2  added all files\
+\cf3 a2d09411f5001e9417a7c0bf179352d443ed13b9\cf2  Direct commit\
+mayank@Mayanks-Air gittut % git log -p -1                       \
+\cf3 commit 471fe83993bce671552ad69ae61539b9f3933421 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    added new comment to this / -> commands added in gitcommandstut.rtf\
+\cf3 commit 471fe83993bce671552ad69ae61539b9f3933421 (
+\f1\b \cf6 HEAD -> \cf5 master
+\f0\b0 \cf3 )\cf2 \
+Author: Mayank <mayanknager2001@gmail.com>\
+Date:   Fri Mar 26 21:08:13 2021 +0530\
+\
+    added new comment to this / -> commands added in gitcommandstut.rtf\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/gitcommandstut.rtf b/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b index d4774e7..dd7488e 100644
+\f0\b0 \
+
+\f1\b --- a/gitcommandstut.rtf
+\f0\b0 \
+
+\f1\b +++ b/gitcommandstut.rtf
+\f0\b0 \
+\cf6 @@ -142,4 +142,447 @@\cf2  Changes not staged for commit:\\\
+ \\\
+ no changes added to commit (use "git add" and/or "git commit -a")\\\
+ mayank@Mayanks-Air gittut % git add first.rtf\\\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -mayank@Mayanks-Air gittut % \}\cf2 \
+\\ No newline at end of file\
+\cf5 +mayank@Mayanks-Air gittut % \\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Second stage learning\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % touch .gitignore\\\cf2 \
+\cf5 +mayank@Mayanks-Air gittut % git status      \\\cf2 \
+\cf5 +On branch master\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +No commits yet\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +Changes to be committed:\\\cf2 \
+\cf5 +  (use "git rm --cached <file>..." to unstage)\\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   .DS_Store\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   first.rtf\\cf2 \\\cf2 \
+\cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
+:\
+\
 }
