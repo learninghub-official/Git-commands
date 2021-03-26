@@ -1409,4 +1409,53 @@ To https://github.com/learninghub-official/python-projects.git\
 Branch 'master' set up to track remote branch 'master' from 'origin'.\
 mayank@Mayanks-Air gittut % \
 \
+\
+To change anything on GitHub repo\
+Steps are give with Example\
+The example is to rename the file and push it on GitHub\
+\
+mayank@Mayanks-Air gittut % mv quick.docx quicker.docx\
+mayank@Mayanks-Air gittut % git stauts\
+git: 'stauts' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	status\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 deleted:    quick.docx\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 quicker.docx\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git add . \
+mayank@Mayanks-Air gittut % git commit -m"renamed quick to quicker"\
+[master d433de0] renamed quick to quicker\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ rename quick.docx => quicker.docx (100%)\
+mayank@Mayanks-Air gittut % git status                             \
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git push -u origin master              \
+Enumerating objects: 3, done.\
+Counting objects: 100% (3/3), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (2/2), done.\
+Writing objects: 100% (2/2), 262 bytes | 262.00 KiB/s, done.\
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/learninghub-official/python-projects.git\
+   9a118ca..d433de0  master -> master\
+Branch 'master' set up to track remote branch 'master' from 'origin'.\
+mayank@Mayanks-Air gittut % \
+\
 }
