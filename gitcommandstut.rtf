@@ -142,4 +142,447 @@ Changes not staged for commit:\
 \
 no changes added to commit (use "git add" and/or "git commit -a")\
 mayank@Mayanks-Air gittut % git add first.rtf\
-mayank@Mayanks-Air gittut % }
+mayank@Mayanks-Air gittut % \
+\
+\
+Second stage learning\
+\
+mayank@Mayanks-Air gittut % touch .gitignore\
+mayank@Mayanks-Air gittut % git status      \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   gitcommandstut.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .gitignore\cf2 \
+	\cf4 error.log\cf2 \
+\
+mayank@Mayanks-Air gittut % cd .gitignore \
+cd: not a directory: .gitignore\
+mayank@Mayanks-Air gittut % cd .gitignore \
+cd: not a directory: .gitignore\
+mayank@Mayanks-Air gittut % ls\
+error.log		first.rtf		gitcommandstut.rtf	quick.docx\
+mayank@Mayanks-Air gittut % git status      \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   gitcommandstut.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .gitignore\cf2 \
+	\cf4 .gitignore.rtf\cf2 \
+	\cf4 error.log\cf2 \
+\
+mayank@Mayanks-Air gittut % rm -rf .git                                           \
+mayank@Mayanks-Air gittut % git status \
+fatal: not a git repository (or any of the parent directories): .git\
+mayank@Mayanks-Air gittut % git status \
+fatal: not a git repository (or any of the parent directories): .git\
+mayank@Mayanks-Air gittut % git init        \
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\
+mayank@Mayanks-Air gittut % touch error.log \
+mayank@Mayanks-Air gittut % git status     \
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .DS_Store\cf2 \
+	\cf4 .gitignore\cf2 \
+	\cf4 .gitignore.rtf\cf2 \
+	\cf4 error.log\cf2 \
+	\cf4 first.rtf\cf2 \
+	\cf4 gitcommandstut.rtf\cf2 \
+	\cf4 quick.docx\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+mayank@Mayanks-Air gittut % rm -rf .git    \
+mayank@Mayanks-Air gittut % git init       \
+\cf3 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf3 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf3 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf3 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf3 hint: \cf2 \
+\cf3 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/mayank/Desktop/gittut/.git/\
+mayank@Mayanks-Air gittut % git status \
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .DS_Store\cf2 \
+	\cf4 .gitignore\cf2 \
+	\cf4 .gitignore.rtf\cf2 \
+	\cf4 error.log\cf2 \
+	\cf4 first.rtf\cf2 \
+	\cf4 gitcommandstut.rtf\cf2 \
+	\cf4 quick.docx\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+mayank@Mayanks-Air gittut % git add --a\
+mayank@Mayanks-Air gittut % git status \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   .gitignore\cf2 \
+	\cf5 new file:   .gitignore.rtf\cf2 \
+	\cf5 new file:   error.log\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   gitcommandstut.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+mayank@Mayanks-Air gittut % git status \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   .gitignore\cf2 \
+	\cf5 new file:   .gitignore.rtf\cf2 \
+	\cf5 new file:   error.log\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   gitcommandstut.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   first.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git diff\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/first.rtf b/first.rtf
+\f0\b0 \
+
+\f1\b index 121b15a..7bffd3b 100644
+\f0\b0 \
+
+\f1\b --- a/first.rtf
+\f0\b0 \
+
+\f1\b +++ b/first.rtf
+\f0\b0 \
+\cf6 @@ -8,4 +8,4 @@\cf2 \
+ \\f0\\fs24 \\cf0 My name is Mayank\\\
+ I want this to go into commit 2\\\
+ Different\\\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf4 -\}\cf2 \
+\\ No newline at end of file\
+\cf5 +Is done\}\cf2 \
+\\ No newline at end of file\
+mayank@Mayanks-Air gittut % git add .\
+mayank@Mayanks-Air gittut % git diff \
+mayank@Mayanks-Air gittut % git diff --stage\
+error: invalid option: --stage\
+mayank@Mayanks-Air gittut % git diff --staged\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/.DS_Store b/.DS_Store
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..8d69f31
+\f0\b0 \
+Binary files /dev/null and b/.DS_Store differ\
+
+\f1\b diff --git a/.gitignore b/.gitignore
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..e69de29
+\f0\b0 \
+
+\f1\b diff --git a/.gitignore.rtf b/.gitignore.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..f4603b8
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/.gitignore.rtf
+\f0\b0 \
+\cf6 @@ -0,0 +1,8 @@\cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2513\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\}\cf2 \
+\cf5 +\\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww10800\\viewh8400\\viewkind0\cf2 \
+\cf5 +\\pard\\tx566\\tx1133\\tx1700\\tx2267\\tx2834\\tx3401\\tx3968\\tx4535\\tx5102\\tx5669\\tx6236\\tx6803\\pardirnatural\\partightenfactor0\cf2 \
+\cf5 +\cf2 \
+\cf5 +\\f0\\fs24 \\cf0 error.log\}\cf2 \
+\\ No newline at end of file\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b diff --git a/error.log b/error.log
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..e69de29
+\f0\b0 \
+
+\f1\b diff --git a/first.rtf b/first.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..7bffd3b
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/first.rtf
+\f0\b0 \
+\cf6 @@ -0,0 +1,11 @@\cf2 \
+\
+mayank@Mayanks-Air gittut % git status       \
+On branch master\
+\
+No commits yet\
+\
+Changes to be committed:\
+  (use "git rm --cached <file>..." to unstage)\
+	\cf5 new file:   .DS_Store\cf2 \
+	\cf5 new file:   .gitignore\cf2 \
+	\cf5 new file:   .gitignore.rtf\cf2 \
+	\cf5 new file:   error.log\cf2 \
+	\cf5 new file:   first.rtf\cf2 \
+	\cf5 new file:   gitcommandstut.rtf\cf2 \
+	\cf5 new file:   quick.docx\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 second.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -a -m "Direct commit"\
+[master (root-commit) a2d0941] Direct commit\
+ 7 files changed, 164 insertions(+)\
+ create mode 100644 .DS_Store\
+ create mode 100644 .gitignore\
+ create mode 100644 .gitignore.rtf\
+ create mode 100644 error.log\
+ create mode 100644 first.rtf\
+ create mode 100644 gitcommandstut.rtf\
+ create mode 100644 quick.docx\
+mayank@Mayanks-Air gittut % git add second.rtf              \
+mayank@Mayanks-Air gittut % git status                      \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   second.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   second.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+mayank@Mayanks-Air gittut % git add .\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 modified:   .DS_Store\cf2 \
+	\cf5 new file:   second.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "added all files"\
+[master bc41937] added all files\
+ 2 files changed, 11 insertions(+)\
+ create mode 100644 second.rtf\
+mayank@Mayanks-Air gittut % git status                     \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes not staged for commit:\
+  (use "git add/rm <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 deleted:    first.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 first1.rtf\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-Air gittut % git add .\
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 renamed:    first.rtf -> first1.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "renamed "          \
+[master 2bc027e] renamed\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ rename first.rtf => first1.rtf (100%)\
+mayank@Mayanks-Air gittut % git status              \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git rm second.rtf \
+rm 'second.rtf'\
+mayank@Mayanks-Air gittut % git status       \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 deleted:    second.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "removed second.txt or rtf"\
+[master e305e90] removed second.txt or rtf\
+ 1 file changed, 11 deletions(-)\
+ delete mode 100644 second.rtf\
+mayank@Mayanks-Air gittut % git status                               \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git mv first1.rtf first_rename.rtf\
+mayank@Mayanks-Air gittut % git status                        \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 renamed:    first1.rtf -> first_rename.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "removed by git commands"  \
+[master ad015aa] removed by git commands\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ rename first1.rtf => first_rename.rtf (100%)\
+mayank@Mayanks-Air gittut % git status                             \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git rm --cached gitcommandstut.rtf \
+rm 'gitcommandstut.rtf'\
+mayank@Mayanks-Air gittut % git status                        \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 deleted:    gitcommandstut.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 gitcommandstut.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % touch .gitreignore\
+mayank@Mayanks-Air gittut % git rm .gitignore.rtf \
+rm '.gitignore.rtf'\
+mayank@Mayanks-Air gittut % git rm .gitignore  \
+rm '.gitignore'\
+mayank@Mayanks-Air gittut % git status           \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 deleted:    .gitignore\cf2 \
+	\cf5 deleted:    .gitignore.rtf\cf2 \
+	\cf5 deleted:    gitcommandstut.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .gitreignore\cf2 \
+	\cf4 gitcommandstut.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % cd .gitreignore   \
+cd: not a directory: .gitreignore\
+mayank@Mayanks-Air gittut % git rm .gitreignore \
+fatal: pathspec '.gitreignore' did not match any files\
+mayank@Mayanks-Air gittut % git status         \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 deleted:    .gitignore\cf2 \
+	\cf5 deleted:    .gitignore.rtf\cf2 \
+	\cf5 deleted:    gitcommandstut.rtf\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf4 .gitreignore\cf2 \
+	\cf4 gitcommandstut.rtf\cf2 \
+\
+mayank@Mayanks-Air gittut % git add --a\
+mayank@Mayanks-Air gittut % git status \
+On branch master\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 deleted:    .gitignore.rtf\cf2 \
+	\cf5 renamed:    .gitignore -> .gitreignore\cf2 \
+\
+mayank@Mayanks-Air gittut % git commit -m "Removed and ignored files "\
+[master 4ef4b99] Removed and ignored files\
+ 2 files changed, 8 deletions(-)\
+ delete mode 100644 .gitignore.rtf\
+ rename .gitignore => .gitreignore (100%)\
+mayank@Mayanks-Air gittut % git status                                \
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % \
+}
