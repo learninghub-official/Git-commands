@@ -1328,4 +1328,85 @@ Date:   Fri Mar 26 21:08:13 2021 +0530\
 \cf5 +\cf2        \cf5 \\cf5 new file:   gitcommandstut.rtf\\cf2 \\\cf2 \
 :\
 \
+\
+How to upload code on git hub Example here\
+Last login: Fri Mar 26 13:47:30 on ttys000\
+mayank@Mayanks-Air ~ % cd Desktop \
+mayank@Mayanks-Air Desktop % cd gittut \
+mayank@Mayanks-Air gittut % git status\
+On branch master\
+nothing to commit, working tree clean\
+mayank@Mayanks-Air gittut % git remote\
+mayank@Mayanks-Air gittut % git remote add origin https://github.com/learninghub-official/python-projects.git\
+mayank@Mayanks-Air gittut % git remote \
+origin\
+mayank@Mayanks-Air gittut % git remote -v\
+origin	https://github.com/learninghub-official/python-projects.git (fetch)\
+origin	https://github.com/learninghub-official/python-projects.git (push)\
+mayank@Mayanks-Air gittut % git push -u origin master\
+Username for 'https://github.com': ^C\
+mayank@Mayanks-Air gittut % ssh-keygen -t ed25519 -C "mayanknager2001@gmail.com"\
+Generating public/private ed25519 key pair.\
+Enter file in which to save the key (/Users/mayank/.ssh/id_ed25519): y         \
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in Dy.\
+Your public key has been saved in Dy.pub.\
+The key fingerprint is:\
+SHA256:d6sW3CH58B1MaeP/LLdXQPYZopeD5uebtol+vSIiNcw mayanknager2001@gmail.com\
+The key's randomart image is:\
++--[ED25519 256]--+\
+|               . |\
+|             .B. |\
+|           .oBooo|\
+|          ++.+=..|\
+|        S.+*oo.+ |\
+|         Eoo+o. o|\
+|        . ..+ ..o|\
+|       . ..o.=+.=|\
+|        ..+o+=+=+|\
++----[SHA256]-----+\
+mayank@Mayanks-Air gittut % ssh-keygen -t ed25519 -C "mayanknager2001@gmail.com"\
+Generating public/private ed25519 key pair.\
+Enter file in which to save the key (/Users/mayank/.ssh/id_ed25519): \
+Created directory '/Users/mayank/.ssh'.\
+Enter passphrase (empty for no passphrase): \
+Enter same passphrase again: \
+Your identification has been saved in /Users/mayank/.ssh/id_ed25519.\
+Your public key has been saved in /Users/mayank/.ssh/id_ed25519.pub.\
+The key fingerprint is:\
+SHA256:1YCjlOpUCCYohuIkmUaC9TNf4u75ue0lKoMGTK5hLGk mayanknager2001@gmail.com\
+The key's randomart image is:\
++--[ED25519 256]--+\
+|B=+. . . ..      |\
+|@* .. + o  o     |\
+|O   ++..... .    |\
+| .. o=.o .       |\
+|.= o  o S        |\
+|+E+ ..           |\
+|+o . ..   . .    |\
+|.   o.o. + o     |\
+|   .  o+=oo      |\
++----[SHA256]-----+\
+mayank@Mayanks-Air gittut % eval "$(ssh-agent -s)"\
+Agent pid 17606\
+mayank@Mayanks-Air gittut % ssh-add -K ~/.ssh/id_ed25519\
+Identity added: /Users/mayank/.ssh/id_ed25519 (mayanknager2001@gmail.com)\
+mayank@Mayanks-Air gittut % tail  ~/.ssh/id_ed25519.pub\
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDImgRzysLQNm80jW+tuMxgq/KV4MFxG9xtU7yQ3MZ9O mayanknager2001@gmail.com\
+mayank@Mayanks-Air gittut % git push -u origin master\
+Username for 'https://github.com': learninghub-official\
+Password for 'https://learninghub-official@github.com': \
+Enumerating objects: 26, done.\
+Counting objects: 100% (26/26), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (25/25), done.\
+Writing objects: 100% (26/26), 553.74 KiB | 16.78 MiB/s, done.\
+Total 26 (delta 13), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (13/13), done.\
+To https://github.com/learninghub-official/python-projects.git\
+ * [new branch]      master -> master\
+Branch 'master' set up to track remote branch 'master' from 'origin'.\
+mayank@Mayanks-Air gittut % \
+\
 }
