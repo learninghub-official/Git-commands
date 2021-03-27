@@ -1516,4 +1516,86 @@ Your branch is ahead of 'origin/master' by 2 commits.\
 \
 nothing to commit, working tree clean\
 mayank@Mayanks-MacBook-Air gittut % \
+\
+Merging Pushing & deleting  branch to remote with demo\
+\
+\
+mayank@Mayanks-MacBook-Air gittut % git status                   \
+On branch develop\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   sortedgitcommands.rtf\cf2 \
+\
+mayank@Mayanks-MacBook-Air gittut % git commit  -m "file added" \
+[develop 7b52c0f] file added\
+ 1 file changed, 63 insertions(+)\
+ create mode 100644 sortedgitcommands.rtf\
+mayank@Mayanks-MacBook-Air gittut % git status                 \
+On branch develop\
+nothing to commit, working tree clean\
+mayank@Mayanks-MacBook-Air gittut % git push origin develop      \
+Enumerating objects: 8, done.\
+Counting objects: 100% (8/8), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (6/6), done.\
+Writing objects: 100% (6/6), 1.53 KiB | 1.53 MiB/s, done.\
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.\
+remote: \
+remote: Create a pull request for 'develop' on GitHub by visiting:\
+remote:      https://github.com/learninghub-official/python-projects/pull/new/develop\
+remote: \
+To https://github.com/learninghub-official/python-projects.git\
+ * [new branch]      develop -> develop\
+mayank@Mayanks-MacBook-Air gittut % git add .\
+mayank@Mayanks-MacBook-Air gittut % git commit -m "new command added to sortedgitcommands"\
+[develop 1a5bc3e] new command added to sortedgitcommands\
+ 1 file changed, 1 insertion(+), 2 deletions(-)\
+mayank@Mayanks-MacBook-Air gittut % git push origin develop\
+Enumerating objects: 5, done.\
+Counting objects: 100% (5/5), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 356 bytes | 356.00 KiB/s, done.\
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.\
+To https://github.com/learninghub-official/python-projects.git\
+   7b52c0f..1a5bc3e  develop -> develop\
+mayank@Mayanks-MacBook-Air gittut % git status             \
+On branch develop\
+nothing to commit, working tree clean\
+mayank@Mayanks-MacBook-Air gittut % git checkout master    \
+Switched to branch 'master'\
+Your branch is up to date with 'origin/master'.\
+mayank@Mayanks-MacBook-Air gittut % git branch\
+  develop\
+* \cf5 master\cf2 \
+mayank@Mayanks-MacBook-Air gittut % git merge develop\
+Removing quicker.docx\
+Removing first_rename.rtf\
+Merge made by the 'recursive' strategy.\
+ .DS_Store             | Bin \cf4 6148\cf2  -> \cf5 6148\cf2  bytes\
+ first_rename.rtf      |  11 \cf4 ---------\cf2 \
+ quicker.docx          | Bin \cf4 559978\cf2  -> \cf5 0\cf2  bytes\
+ sortedgitcommands.rtf |  62 \cf5 ++++++++++++++++++++++++++++++++++++++++++++++++++\cf2 \
+ 4 files changed, 62 insertions(+), 11 deletions(-)\
+ delete mode 100644 first_rename.rtf\
+ delete mode 100644 quicker.docx\
+ create mode 100644 sortedgitcommands.rtf\
+mayank@Mayanks-MacBook-Air gittut % git branch -d develop  \
+Deleted branch develop (was 1a5bc3e).\
+mayank@Mayanks-MacBook-Air gittut % git push origin master\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (2/2), done.\
+Writing objects: 100% (2/2), 289 bytes | 289.00 KiB/s, done.\
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/learninghub-official/python-projects.git\
+   ed29059..8166ae4  master -> master\
+mayank@Mayanks-MacBook-Air gittut % git push -d origin  develop\
+To https://github.com/learninghub-official/python-projects.git\
+ - [deleted]         develop\
+mayank@Mayanks-MacBook-Air gittut % \
 }
