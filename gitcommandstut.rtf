@@ -1458,4 +1458,62 @@ To https://github.com/learninghub-official/python-projects.git\
 Branch 'master' set up to track remote branch 'master' from 'origin'.\
 mayank@Mayanks-Air gittut % \
 \
+\
+Creating and changing branch on git with demo\
+\
+\
+Last login: Fri Mar 26 22:05:00 on ttys000\
+mayank@Mayanks-MacBook-Air ~ % cd Desktop \
+mayank@Mayanks-MacBook-Air Desktop % cd gittut \
+mayank@Mayanks-MacBook-Air gittut % git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf4 modified:   .DS_Store\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+mayank@Mayanks-MacBook-Air gittut % git add .\
+mayank@Mayanks-MacBook-Air gittut % git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 modified:   .DS_Store\cf2 \
+\
+mayank@Mayanks-MacBook-Air gittut % git commit -m "added all"\
+[master 9fd7efc] added all\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+mayank@Mayanks-MacBook-Air gittut % git status               \
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+mayank@Mayanks-MacBook-Air gittut % git checkout -b develop \
+Switched to a new branch 'develop'\
+mayank@Mayanks-MacBook-Air gittut % git commit -a -m"deleted files"\
+[develop efa7264] deleted files\
+ 3 files changed, 11 deletions(-)\
+ delete mode 100644 first_rename.rtf\
+ delete mode 100644 quicker.docx\
+mayank@Mayanks-MacBook-Air gittut % git status                     \
+On branch develop\
+nothing to commit, working tree clean\
+mayank@Mayanks-MacBook-Air gittut % git checkout master\
+Switched to branch 'master'\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+mayank@Mayanks-MacBook-Air gittut % git status         \
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+mayank@Mayanks-MacBook-Air gittut % \
 }
